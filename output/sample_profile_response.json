@@ -1,0 +1,16 @@
+{
+  "id": "92xxxx",
+  "username": "atul",
+  "display_name": null,
+  "avatar": "5d55754141899036e54df7df8ae8e7c5",
+  "avatar_decoration": null,
+  "discriminator": "0555",
+  "public_flags": 0,
+  "flags": 0,
+  "banner": null,
+  "banner_color": null,
+  "accent_color": null,
+  "locale": "en-GB",
+  "mfa_enabled": true,
+  "premium_type": 0
+}
