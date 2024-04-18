@@ -4,7 +4,8 @@ import express from "express";
 
 const app = express();
 
-app.get("/", async (req, res) => {
+app.get("/api/callback", async (req, res) => {
+  console.log(req.query);
   const { code } = req.query;
   if (code) {
     try {
@@ -18,6 +19,10 @@ app.get("/", async (req, res) => {
       console.log(e);
     }
   }
+  return res.sendFile("public/index.html", { root: "." });
+});
+
+app.get("/", async (req, res) => {
   return res.sendFile("public/index.html", { root: "." });
 });
 

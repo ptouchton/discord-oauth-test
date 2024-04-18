@@ -9,7 +9,7 @@ export const getAccessToken = async (code: string) => {
     client_secret: config.clientSecret,
     code: code,
     grant_type: "authorization_code",
-    redirect_uri: "http://localhost:4000/",
+    redirect_uri: "http://localhost:4000/api/callback",
     scope: "identify",
   }).toString();
   const headers = {
